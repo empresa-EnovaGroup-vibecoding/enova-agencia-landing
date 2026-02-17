@@ -9,34 +9,34 @@ import {
 } from 'lucide-react'
 import { ChatWidget } from '@/features/chat/components/ChatWidget'
 
-const WHATSAPP_NUMBER = '+52 443 321 5051'
-const WHATSAPP_URL = `https://wa.me/524433215051?text=${encodeURIComponent('Hola, estoy interesado en construir software para mi negocio')}`
+const WHATSAPP_NUMBER = '+TU-NUMERO-AQUI'
+const WHATSAPP_URL = `https://wa.me/TUNUMEROAQUI?text=${encodeURIComponent('Hola, me interesa conocer sus servicios de desarrollo digital')}`
 
 const SERVICES = [
-  { icon: Code2, title: 'Sistemas a Medida', desc: 'ERPs, CRMs y plataformas internas.' },
-  { icon: Brain, title: 'Agentes & IA', desc: 'Chatbots, agentes y workflows 24/7.' },
-  { icon: BarChart3, title: 'Apps & Dashboards', desc: 'Portales SaaS con datos en tiempo real.' },
-  { icon: Zap, title: 'Consultoria Tecnica', desc: 'Diagnostico y roadmap de digitalizacion.' },
+  { icon: Code2, title: 'Desarrollo Web & Apps', desc: 'Sitios web, apps y plataformas a medida.' },
+  { icon: Brain, title: 'Agentes & IA', desc: 'Chatbots, automatizaciones y asistentes 24/7.' },
+  { icon: BarChart3, title: 'Paneles & Dashboards', desc: 'Gestion interna con datos en tiempo real.' },
+  { icon: Zap, title: 'Transformacion Digital', desc: 'Digitalizamos y optimizamos tu operacion.' },
 ]
 
 const DIFFERENTIATORS = [
-  { icon: Clock, title: 'Semanas, No Meses', desc: 'Prototipo en dias. Entrega en semanas.' },
-  { icon: Sparkles, title: 'IA Nativa', desc: 'IA integrada en el ADN de cada sistema.' },
-  { icon: Users, title: 'Iterativo Contigo', desc: 'Tu feedback en cada ciclo de desarrollo.' },
+  { icon: Clock, title: 'Rapido & Eficiente', desc: 'Resultados en semanas, no en meses.' },
+  { icon: Sparkles, title: 'IA Integrada', desc: 'Inteligencia artificial en cada solucion.' },
+  { icon: Users, title: 'A Tu Medida', desc: 'Escuchamos tu necesidad y la convertimos en software.' },
 ]
 
 const PROJECTS = [
   {
-    name: 'SaaS Factory',
-    url: 'https://www.saasfactory.so',
-    desc: 'Comunidad para arquitectos de software. 263+ miembros en produccion.',
-    tags: ['Plataforma', 'Comunidad'],
+    name: 'Nexus',
+    url: 'https://glow-subs-hub.lovable.app',
+    desc: 'Panel de gestion interna para control de suscripciones y pagos.',
+    tags: ['Panel Admin', 'Gestion'],
   },
   {
-    name: 'Arbrain.ai',
-    url: 'https://www.arbrain.ai',
-    desc: 'Plataforma IA para negocios. Agente que analiza estrategias y metricas.',
-    tags: ['IA Conversacional', 'SaaS'],
+    name: 'Agentes IA',
+    url: '#',
+    desc: 'Asistentes inteligentes que atienden clientes y automatizan procesos.',
+    tags: ['IA Conversacional', 'Automatizacion'],
   },
 ]
 
@@ -61,8 +61,8 @@ export default function Home() {
         {/* Mobile top bar */}
         <div className="flex items-center justify-between px-3 py-2 flex-shrink-0">
           <div className="flex items-center gap-1.5">
-            <Image src="/logo.png" alt="SaaS Factory" width={22} height={22} className="rounded-md" />
-            <span className="text-[11px] font-semibold text-white">SaaS Factory</span>
+            <Image src="/logo.png" alt="Enova Group" width={22} height={22} className="rounded-md" />
+            <span className="text-[11px] font-semibold text-white">Enova Group</span>
           </div>
           <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-[10px] text-emerald-400">
             <WhatsAppIcon className="w-2.5 h-2.5" />
@@ -93,27 +93,27 @@ export default function Home() {
           {/* Brand - centered */}
           <div className={`flex items-center gap-2.5 mb-2.5 ${mounted ? 'animate-slideInLeft' : 'opacity-0'}`}>
             <div className="relative">
-              <Image src="/logo.png" alt="SaaS Factory" width={32} height={32} className="rounded-xl relative z-10" />
+              <Image src="/logo.png" alt="Enova Group" width={32} height={32} className="rounded-xl relative z-10" />
               <div className="absolute inset-0 rounded-xl animate-goldPulse" />
             </div>
-            <span className="text-sm font-bold text-white tracking-tight">SaaS Factory</span>
+            <span className="text-sm font-bold text-white tracking-tight">Enova Group</span>
           </div>
 
           {/* Hero copy - centered */}
           <div className={`text-center mb-2.5 ${mounted ? 'animate-slideInLeft delay-150' : 'opacity-0'}`}>
             <h1 className="text-xl xl:text-2xl 2xl:text-[1.7rem] font-bold text-white mb-1 leading-[1.15] tracking-tight">
-              Tu Software{' '}
+              Soluciones{' '}
               <span className="bg-gradient-to-r from-violet-400 via-purple-300 to-violet-400 bg-clip-text text-transparent shimmer-text">
-                a Medida
+                Digitales
               </span>
             </h1>
             <p className="text-white/55 text-[11px] xl:text-xs leading-relaxed max-w-sm mx-auto">
-              De <span className="text-amber-400 font-medium">meses</span> a{' '}
-              <span className="text-emerald-400 font-medium">semanas</span>.{' '}
-              ERPs, CRMs, automatizaciones y agentes IA.
+              Llevamos tu negocio al{' '}
+              <span className="text-emerald-400 font-medium">siguiente nivel</span>.{' '}
+              Desarrollo web, apps, IA y automatizaciones.
             </p>
             <div className="flex flex-wrap justify-center gap-1.5 mt-2">
-              {['ERPs & CRMs', 'Agentes IA', 'Automatizacion', 'Dashboards'].map((tag, i) => (
+              {['Desarrollo Web', 'Agentes IA', 'Automatizacion', 'Dashboards'].map((tag, i) => (
                 <span
                   key={tag}
                   className={`px-2 py-0.5 text-[10px] rounded-full border border-violet-500/20 bg-violet-500/5 text-violet-300/80 ${
@@ -157,13 +157,13 @@ export default function Home() {
             {/* Headline */}
             <div className={mounted ? 'animate-slideInRight' : 'opacity-0'}>
               <h2 className="text-xl xl:text-2xl 2xl:text-[1.7rem] font-bold text-white mb-1 leading-tight tracking-tight">
-                Software que{' '}
-                <span className="bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent">opera</span>,{' '}
-                <span className="bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent shimmer-text">automatiza</span>
-                {' '}y escala
+                Creamos,{' '}
+                <span className="bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent">innovamos</span>{' '}y{' '}
+                <span className="bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent shimmer-text">transformamos</span>
+                {' '}tu negocio
               </h2>
               <p className="text-[var(--muted)] text-[11px] xl:text-xs leading-relaxed max-w-lg">
-                Sistemas a la medida de tu operacion. Sin plantillas genericas. Construido exactamente para lo que tu negocio necesita.
+                Soluciones digitales a la medida de tu operacion. Sin plantillas genericas. Construido exactamente para lo que necesitas.
               </p>
             </div>
 
@@ -244,9 +244,9 @@ export default function Home() {
             }`}>
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <h3 className="text-xs xl:text-sm font-bold text-white mb-0.5">Diagnostico gratuito</h3>
+                  <h3 className="text-xs xl:text-sm font-bold text-white mb-0.5">Consulta gratuita</h3>
                   <p className="text-[10px] xl:text-[11px] text-[var(--muted)] leading-snug">
-                    Sin compromiso. En 15 minutos te damos un plan de accion concreto.
+                    Sin compromiso. Cuentanos tu idea y te proponemos una solucion.
                   </p>
                 </div>
                 <a

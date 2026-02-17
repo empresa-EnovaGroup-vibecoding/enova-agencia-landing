@@ -13,21 +13,21 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'SaaS Factory - Software a Medida para tu Negocio',
-  description: 'De meses a semanas. Construimos ERPs, CRMs, agentes IA, automatizaciones y aplicaciones web a la medida de tu operacion. Diagnostico gratuito.',
-  keywords: ['software a medida', 'ERP', 'CRM', 'agentes IA', 'automatizacion', 'desarrollo web', 'SaaS'],
-  authors: [{ name: 'SaaS Factory' }],
+  title: 'Enova Group - Soluciones Digitales para tu Negocio',
+  description: 'Desarrollo web, apps, agentes IA y automatizaciones a la medida de tu operacion. Consulta gratuita.',
+  keywords: ['desarrollo web', 'agentes IA', 'automatizacion', 'transformacion digital', 'apps a medida', 'Enova Group'],
+  authors: [{ name: 'Enova Group' }],
   openGraph: {
-    title: 'SaaS Factory - Tu Software a Medida',
-    description: 'ERPs, CRMs, agentes IA y automatizaciones. Construido en semanas, no en meses. Diagnostico gratuito.',
+    title: 'Enova Group - Soluciones Digitales a tu Medida',
+    description: 'Desarrollo web, agentes IA y automatizaciones. Llevamos tu negocio al siguiente nivel. Consulta gratuita.',
     type: 'website',
     locale: 'es_MX',
-    siteName: 'SaaS Factory',
+    siteName: 'Enova Group',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SaaS Factory - Tu Software a Medida',
-    description: 'ERPs, CRMs, agentes IA y automatizaciones. Construido en semanas, no en meses.',
+    title: 'Enova Group - Soluciones Digitales a tu Medida',
+    description: 'Desarrollo web, agentes IA y automatizaciones. Llevamos tu negocio al siguiente nivel.',
   },
   icons: {
     icon: '/favicon.ico',

@@ -6,10 +6,10 @@ import { Send } from 'lucide-react'
 import Image from 'next/image'
 
 const QUICK_PROMPTS = [
-  'Necesito un sistema a medida',
+  'Necesito una solucion digital',
   'Quiero automatizar con IA',
   'Cuanto tarda un proyecto?',
-  'Que proyectos han hecho?',
+  'Que servicios ofrecen?',
 ]
 
 function getVisitorId(): string {
@@ -64,12 +64,12 @@ export function ChatWidget() {
       {/* Header */}
       <div className="flex items-center gap-2.5 p-3 border-b border-[var(--border)]">
         <div className="relative flex-shrink-0">
-          <Image src="/levy-avatar.webp" alt="Levy" width={36} height={36} className="rounded-full" />
+          <Image src="/levy-avatar.webp" alt="Nova" width={36} height={36} className="rounded-full" />
           <div className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-emerald-500 rounded-full border-2 border-[var(--surface)]" />
         </div>
         <div>
-          <h3 className="text-xs font-semibold text-white">Levy</h3>
-          <p className="text-[10px] text-[var(--muted)]">Consultor IA - Disponible</p>
+          <h3 className="text-xs font-semibold text-white">Nova</h3>
+          <p className="text-[10px] text-[var(--muted)]">Asistente IA - Enova Group</p>
         </div>
       </div>
 
@@ -78,10 +78,10 @@ export function ChatWidget() {
         {!hasMessages && (
           <div className="flex justify-start animate-fadeInUp">
             <div className="flex gap-2 max-w-[85%]">
-              <Image src="/levy-avatar.webp" alt="Levy" width={28} height={28} className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-1" />
+              <Image src="/levy-avatar.webp" alt="Nova" width={28} height={28} className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-1" />
               <div className="glass-assistant-message rounded-2xl rounded-tl-sm px-3 py-2.5">
                 <p className="text-xs text-white/90">
-                  Hola! Soy Levy, consultor de software en SaaS Factory. Cuentame sobre tu negocio y te digo como podemos ayudarte.
+                  Hola! Soy Nova, asistente digital de Enova Group. Cuentame que necesitas y te explico como podemos ayudarte.
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ export function ChatWidget() {
           >
             {m.role === 'assistant' ? (
               <div className="flex gap-2 max-w-[85%]">
-                <Image src="/levy-avatar.webp" alt="Levy" width={28} height={28} className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-1" />
+                <Image src="/levy-avatar.webp" alt="Nova" width={28} height={28} className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-1" />
                 <div className="glass-assistant-message rounded-2xl rounded-tl-sm px-3 py-2.5">
                   <p className="text-xs text-white/90 whitespace-pre-wrap">
                     {getMessageText(m)}
@@ -113,7 +113,7 @@ export function ChatWidget() {
         {isLoading && messages[messages.length - 1]?.role === 'user' && (
           <div className="flex justify-start streaming-fade">
             <div className="flex gap-2">
-              <Image src="/levy-avatar.webp" alt="Levy" width={28} height={28} className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-1" />
+              <Image src="/levy-avatar.webp" alt="Nova" width={28} height={28} className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-1" />
               <div className="glass-assistant-message rounded-2xl rounded-tl-sm px-3 py-2.5">
                 <div className="flex gap-1">
                   <span className="w-1.5 h-1.5 bg-violet-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
